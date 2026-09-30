@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>My Data Projects - Ashwin Basil Jacob</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tailwind-built.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md">
+<header class="bg-surface dark:bg-background border-b border-outline-variant dark:border-outline fixed top-0 left-0 w-full z-50 px-margin-desktop py-4 max-w-container-max mx-auto md:flex hidden justify-between items-center h-[72px]">
+<div class="font-headline-lg text-headline-lg font-bold text-primary">Ashwin Basil</div>
+<nav class="flex gap-gutter">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="index.html">Home</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 hover:text-secondary transition-colors duration-200" href="projects.html">Projects</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="about.html">About</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="contact.html">Contact</a>
+</nav>
+<a href="Ashwin_Basil_Jacob_Resume.pdf" class="bg-primary text-on-primary rounded font-label-caps text-label-caps px-4 py-2 hover:bg-secondary transition-colors duration-200 inline-block" download>Resume</a>
+</header>
+<header class="bg-surface border-b border-outline-variant fixed top-0 left-0 w-full z-50 flex md:hidden justify-between items-center px-margin-mobile py-4 h-[64px]">
+<div class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">Ashwin Basil</div>
+<nav class="flex gap-4 font-label-caps text-label-caps">
+<a class="text-secondary" href="index.html">Home</a>
+<a class="text-on-surface-variant" href="projects.html">Work</a>
+<a class="text-on-surface-variant" href="contact.html">Contact</a>
+</nav>
+</header>
+<main class="flex-grow pt-[104px] md:pt-[120px] pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<section class="mb-section-gap">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-4">My Data Projects</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+    Distilling complex datasets into actionable insights. This gallery showcases my analytical approach across financial modeling, machine learning, and comprehensive data visualization.
+</p>
+</section>
+<section class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-gutter">
+
+<a href="https://github.com/ashwinbasil/nyc311-ops-analysis" target="_blank" rel="noopener" id="nyc311" class="col-span-4 bg-surface-container-lowest border border-surface-variant rounded-lg overflow-hidden group hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-shadow duration-300 flex flex-col h-full">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" alt="Dashboard visual representing the NYC 311 Ops Analysis project" src="docs/images/trend_chart.png" loading="lazy" onerror="this.closest('div').classList.add('bg-surface-container-high')">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary leading-tight">NYC 311 Ops Bottleneck Diagnosis</h2>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
+</div>
+<div class="font-label-caps text-label-caps text-secondary mb-4">[SQL / DBT / BIGQUERY / POWER BI]</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+    Built a dbt-tested pipeline on real NYC 311 service request data (27M+ rows) to diagnose agency capacity risk. Identified a COVID-driven acute failure at DOHMH and a chronic, later-resolved capacity issue at DPR, surfaced through window-function trend analysis and validated data-quality rules.
+</p>
+<div class="mt-auto flex items-center justify-between border-t border-surface-variant pt-4">
+<div class="flex gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high px-2 py-1 rounded text-on-surface-variant">Operations Analytics</span>
+</div>
+<div class="h-1 w-16 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+</div>
+</div>
+</a>
+
+<a href="https://github.com/ashwinbasil/nyc-taxi-analytics" target="_blank" rel="noopener" id="nyc-taxi" class="col-span-4 bg-surface-container-lowest border border-surface-variant rounded-lg overflow-hidden group hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-shadow duration-300 flex flex-col h-full">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" alt="Abstract dashboard mockup with charts representing the NYC Taxi Analytics Pipeline project" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4RAQA5A_jFntdPGsRMaOX2XFRqVG1RC3OTpiusMCGh3UexuU4Rv8z3mkaPaERFKLuqCyxUaBGqQML3G74Ye5BeVK7FRQ21GcsBzlsILLzcQ8e517REPOZ8Hps-dRglVXgXaSTbzqyKMuSnC7XxRCZC_kGSw_4yUFrgBXszPIwd67Lis72ygaRHXMxZhUwSAjc4E8A5bnvBE60OpbkPuglm3ap9bS2TRhI7Ge2ri1DoYNuOwYYQFWO" loading="lazy" onerror="this.closest('div').classList.add('bg-surface-container-high')">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary leading-tight">NYC Taxi Analytics Pipeline</h2>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
+</div>
+<div class="font-label-caps text-label-caps text-secondary mb-4">[PYTHON / DUCKDB / MYSQL / DOCKER / TABLEAU]</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+    Built an end-to-end data pipeline to analyze NYC Taxi data, leveraging DuckDB for fast analytical queries and MySQL for persistent storage, containerized with Docker and visualized in Tableau.
+</p>
+<div class="mt-auto flex items-center justify-between border-t border-surface-variant pt-4">
+<div class="flex gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high px-2 py-1 rounded text-on-surface-variant">Big Data</span>
+</div>
+<div class="h-1 w-16 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+</div>
+</div>
+</a>
+
+<a href="https://github.com/ashwinbasil/Workforce-Data-Quality-Governance-Analysis" target="_blank" rel="noopener" id="data-quality" class="col-span-4 bg-surface-container-lowest border border-surface-variant rounded-lg overflow-hidden group hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-shadow duration-300 flex flex-col h-full">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" alt="Abstract network graph representing the Data Quality Framework project" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9_Ng1mbg3pYRMj7QPaoyyTOViT5iKxF_hXibSsIPyZPlPEmFqta3QO2kQQf5VawcWL94hRGZ2tMAjhus20FT0_A5tsgAfHRmnzdFdnjNLYp8P_s4ViDAWXPKfCG2LvveaB-v-c1MMQbF5U_qlo9cb4qczzXRkoVnu1qNKZyngqzSZAppVOaQF-HOsfQKq89q1zNGL9FNMzJb2RYTJNJeANrz8uNcAoZr40RhTK2h0Ml_fzUWb3y99" loading="lazy" onerror="this.closest('div').classList.add('bg-surface-container-high')">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary leading-tight">Data Quality and Governance Framework</h2>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
+</div>
+<div class="font-label-caps text-label-caps text-secondary mb-4">[PYTHON / SQL / PANDAS]</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+    Developed a robust framework for monitoring data quality and enforcing governance policies, utilizing Pandas and SQL to automate data validation checks and anomaly detection.
+</p>
+<div class="mt-auto flex items-center justify-between border-t border-surface-variant pt-4">
+<div class="flex gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high px-2 py-1 rounded text-on-surface-variant">Data Analysis</span>
+</div>
+<div class="h-1 w-16 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+</div>
+</div>
+</a>
+
+<a href="https://github.com/ashwinbasil/mean-reversion-signal-backtest" target="_blank" rel="noopener" id="backtester" class="col-span-4 bg-surface-container-lowest border border-surface-variant rounded-lg overflow-hidden group hover:shadow-[0_4px_12px_rgba(15,23,42,0.05)] transition-shadow duration-300 flex flex-col h-full">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" alt="Abstract financial bar chart representing the Mean Reversion Trading Backtester project" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_GyaIpYCmJCP_J5VrFOLLA3QxmiRYug4vvMuQDNWCs2wCneDF2uMnznCoxWfbcl0BCIKaLw05tsI1-nbKUraK8aL9NGIqGHZM4kG2TRocF57zgGD5p9wgZeSDG9GwXlUOnrCJZl-wdARudmXLaW2q9Q7Nib-yUtFzp2QZxB3pmJCrtAgL80LYCDheV1YP8ttYjbzx7O90RgWMAupYDXDM6CbncUiadIM6qqBS-R74AjipWzrdIZ6G" loading="lazy" onerror="this.closest('div').classList.add('bg-surface-container-high')">
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary leading-tight">Mean Reversion Trading Backtester</h2>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
+</div>
+<div class="font-label-caps text-label-caps text-secondary mb-4">[PYTHON / PANDAS / NUMPY / SCIKIT-LEARN]</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+    Engineered a mean reversion trading strategy backtesting engine using historical market data, applying Scikit-learn for signal generation and Pandas/NumPy for performance metrics.
+</p>
+<div class="mt-auto flex items-center justify-between border-t border-surface-variant pt-4">
+<div class="flex gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high px-2 py-1 rounded text-on-surface-variant">Finance</span>
+</div>
+<div class="h-1 w-16 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+</div>
+</div>
+</a>
+
+<a href="https://github.com/ashwinbasil/f1-telemetry-strategy" target="_blank" rel="noopener" id="f1-telemetry" class="col-span-4 bg-surface-container-lowest border border-outline-variant border-dashed rounded-lg overflow-hidden group flex flex-col h-full opacity-80">
+<div class="h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" alt="Abstract telemetry visualization representing the F1 Telemetry Strategy project" src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80" loading="lazy" onerror="this.closest('div').classList.add('bg-surface-container-high')">
+</div>
+<div class="p-6 flex flex-col flex-grow border-b-2 border-outline">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary leading-tight">F1 Telemetry Strategy</h2>
+<span class="material-symbols-outlined text-outline">schedule</span>
+</div>
+<div class="font-label-caps text-label-caps text-outline mb-4">[PYTHON]</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+    Analyzing Formula 1 telemetry data to extract insights on race strategy and driver performance, using Python to process time-series datasets and visualize key racing metrics.
+</p>
+<div class="mt-auto flex items-center justify-between pt-4">
+<div class="flex gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high px-2 py-1 rounded text-on-surface-variant">Data Analysis</span>
+<span class="font-label-caps text-label-caps bg-secondary-fixed text-on-secondary-fixed px-2 py-1 rounded">In Progress</span>
+</div>
+</div>
+</div>
+</a>
+
+</section>
+</main>
+<footer class="bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline w-full py-section-gap px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-base mt-auto">
+<div class="font-data-display text-data-display text-primary">Ashwin Basil Jacob</div>
+<div class="text-on-surface dark:text-on-surface font-label-caps text-label-caps text-center md:text-left">© 2024 Ashwin Basil Jacob. All rights reserved.</div>
+<nav class="flex gap-4 font-label-caps text-label-caps">
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="https://linkedin.com/in/ashwin176" target="_blank" rel="noopener">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="https://github.com/ashwinbasil" target="_blank" rel="noopener">GitHub</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="mailto:ashwinbasil176@gmail.com">Email</a>
+</nav>
+</footer>
+</body>
+</html>
